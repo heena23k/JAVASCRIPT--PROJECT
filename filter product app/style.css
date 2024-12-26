@@ -1,0 +1,93 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Filter Container */
+.filter-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    flex-wrap: wrap; /* Ensures wrapping on smaller screens */
+}
+
+/* Search Container */
+.search-container {
+    display: flex;
+    gap: 10px; /* Adds spacing between input and button */
+}
+
+#search-input {
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#search-btn {
+    padding: 10px 15px;
+    background-color: antiquewhite;
+    border: none;
+    color: #831212;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Category Buttons */
+.category-container {
+    display: flex;
+    gap: 10px; /* Adds spacing between buttons */
+    flex-wrap: wrap;
+}
+
+.category-btn {
+    padding: 10px 15px;
+    background-color: #2196f3;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.category-btn.active {
+    background-color: orange;
+}
+
+/* Product Items */
+.product-item {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for product items */
+}
+
+/* Product List */
+.product-list {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap */
+    justify-content: center; /* Center items */
+    gap: 20px; /* Adds spacing between items */
+    padding: 20px;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .filter-container {
+        flex-direction: column; /* Stack filters vertically */
+        align-items: center;
+    }
+
+    .search-container {
+        margin-bottom: 15px;
+    }
+
+    .product-list {
+        flex-direction: column; /* Stack product items */
+        align-items: center;
+    }
+}
